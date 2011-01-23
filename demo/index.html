@@ -1,0 +1,27 @@
+<!doctype html>  
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>onfullscreendemo</title>
+  <meta name="description" content="Demo for $.onfullscreen - a simple fullscreen jQuery event emulator.">
+  <meta name="author" content="Horia Dragomir">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <h1>Not Fullscreen.</h1>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+  <script src="../jquery.onfullscreen-1.0.0.js"></script>
+  <script>
+    $(window).bind('fullscreen', function(ev, is_fullscreen){
+        $('h1').text(is_fullscreen ? 'Fullscreen!' : 'Not Fullscreen.');
+    });
+  </script>
+
+</body>
+</html>
