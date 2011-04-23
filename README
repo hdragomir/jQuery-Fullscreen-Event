@@ -1,0 +1,11 @@
+Simple plugin to trigger an event once browser enters or leaves fullscreen mode.
+
+USAGE:
+
+$(window).bind('fullscreen', function(ev, is_fullscreen){
+    // is_fullscreen will reflect fullscreen condition
+});
+
+OR:
+
+$.onfullscreen() // returns the current state
